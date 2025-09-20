@@ -3,11 +3,6 @@ function checkForSpam(message) {
   return lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
 }
 
-// function checkForSpam(message) {
-//   const lowerCaseMessage = message.toLowerCase();
-//   return lowerCaseMessage.indexOf("spam") !== -1 || lowerCaseMessage.indexOf("sale") !== -1;
-// }
-
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
 console.log(checkForSpam("Get best sale offers now!")); // true
